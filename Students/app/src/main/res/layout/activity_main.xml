@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:textColor="#039BE5"
+            android:layout_width="253dp"
+            android:layout_height="wrap_content"
+            android:hint="学生管理系统"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/usernameEdit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:hint="请输入用户名"
+            android:textAlignment="center"
+            android:background="@drawable/style"/>
+        <EditText
+            android:id="@+id/passwordEdit"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:hint="请输入密码"
+            android:layout_marginTop="40dp"
+            android:textAlignment="center"
+            android:inputType="textPassword"
+            android:background="@drawable/style"/>
+
+        <RadioGroup
+            android:layout_marginTop="40dp"
+            android:id="@+id/radiogroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_toRightOf="@+id/checkbox3" >
+
+            <RadioButton
+                android:id="@+id/radiobutton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="学生" />
+
+            <RadioButton
+                android:id="@+id/radiobutton2"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="管理员" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:text="登录"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:background="@drawable/button_selector"
+            />
+    </LinearLayout>
+
+</LinearLayout >
